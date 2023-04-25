@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+form input, select {
+    margin-bottom: 5px;}
+
+/* form label{
+        display: inline-block;
+        width: 40%;
+    } */
+
+span label {
+    display: inline;
+}
+
+#show-errors, #show-success {
+    color: #ffffff;
+    margin-top: 5px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: solid 1px #000000;
+    font-style: oblique;
+    font-weight: bold;
+    display: none;
+}
+
+#show-errors {
+    background-color: rgb(252, 69, 69);
+}
+
+#show-success {
+    background-color: rgb(69, 252, 100);
+}
