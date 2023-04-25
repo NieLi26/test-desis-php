@@ -1,16 +1,4 @@
 /* VALIDACION DE DATOS */
-// let nombre = document.querySelector("input[name='nombre']")
-// let alias = document.querySelector("input[name='alias']")
-// let region = document.getElementById('region')
-// let comuna = document.getElementById('comuna')
-// let candidato = document.getElementById('candidato')
-// let email = document.querySelector("input[name='email']")
-// let rut = document.querySelector("input[name='rut']")
-// let web = document.querySelector("input[name='web']")
-// let tv = document.querySelector("input[name='tv']")
-// let social = document.querySelector("input[name='social']")
-// let amigo = document.querySelector("input[name='amigo']")
-
 let form = document.querySelector("form");
 let nombre = form.elements.nombre;
 let alias = form.elements.alias;
@@ -81,9 +69,6 @@ form.addEventListener("submit", async function (event) {
     fetch(url, options)
         .then(response => response.json())
         .then(data => {
-            // console.log(Object.keys(data)[0]);
-            // console.log(data.hasOwnProperty('success'));
-            // console.log(data['success']);
             let ul = document.createElement("ul");
             let li = document.createElement("li");
             if(data.hasOwnProperty('success')){
@@ -165,11 +150,6 @@ function validate(rut) {
   if (/^0+/.test(rut)) {
     return false;
   }
-
-  // if (!/^0*(\d{1,3}(\.?\d{3})*)-?([\dkK])$/.test(rut)) {
-  //   return false;
-  // }
-  
 
   if (!/^\d{7,8}-[\dkK]$/.test(rut)) {
     return false;

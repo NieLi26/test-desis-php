@@ -18,10 +18,10 @@ form {
 form input, select {
     margin-bottom: 5px;}
 
-/* form label{
+form label{
         display: inline-block;
         width: 40%;
-    } */
+    }
 
 span label {
     display: inline;
